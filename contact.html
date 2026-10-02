@@ -1,0 +1,623 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact Flavapp support for questions, feedback and assistance with our Android applications.">
+
+    <meta name="theme-color" content="#111827">
+
+    <meta property="og:title" content="Flavapp - Contact Us">
+    <meta property="og:description"
+          content="Contact Flavapp for support and questions about our applications.">
+    <meta property="og:type" content="website">
+
+    <title>Flavapp - Contact Us</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8fafc;
+            color: #111827;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
+        }
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 800;
+            color: #111827;
+        }
+
+        .logo span {
+            color: #2563eb;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #374151;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        /* =========================
+           PAGE HEADER
+        ========================== */
+
+        .page-header {
+            background:
+                radial-gradient(circle at top right, #dbeafe 0, transparent 35%),
+                #ffffff;
+
+            padding: 75px 0 60px;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .page-header h1 {
+            font-size: clamp(36px, 6vw, 54px);
+            line-height: 1.1;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        .page-header p {
+            color: #6b7280;
+            font-size: 16px;
+        }
+
+        /* =========================
+           CONTACT SECTION
+        ========================== */
+
+        .contact-section {
+            padding: 70px 0;
+        }
+
+        .contact-wrapper {
+            max-width: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 25px;
+        }
+
+        /* =========================
+           CONTACT INFO
+        ========================== */
+
+        .contact-info {
+            background: #111827;
+            color: #ffffff;
+            border-radius: 18px;
+            padding: 35px;
+        }
+
+        .contact-info h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info > p {
+            color: #d1d5db;
+            margin-bottom: 30px;
+        }
+
+        .info-item {
+            margin-bottom: 25px;
+        }
+
+        .info-item h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .info-item p {
+            color: #cbd5e1;
+            font-size: 15px;
+        }
+
+        .info-item a {
+            color: #93c5fd;
+            word-break: break-word;
+        }
+
+        .info-item a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* =========================
+           CONTACT FORM
+        ========================== */
+
+        .contact-form {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 18px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+        }
+
+        .contact-form h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form > p {
+            color: #6b7280;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 7px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #374151;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #d1d5db;
+            border-radius: 9px;
+            background: #ffffff;
+            color: #111827;
+            font-family: inherit;
+            font-size: 15px;
+            outline: none;
+            transition: 0.2s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            padding: 13px 20px;
+            border-radius: 9px;
+            background: #2563eb;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 700;
+            transition: 0.2s ease;
+        }
+
+        .submit-button:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 35px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        .copyright {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 750px) {
+
+            .navbar {
+                flex-direction: column;
+                padding: 18px 0;
+            }
+
+            .nav-links {
+                gap: 18px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .page-header {
+                padding: 55px 0 45px;
+            }
+
+            .contact-section {
+                padding: 40px 0;
+            }
+
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info,
+            .contact-form {
+                padding: 25px 20px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            Flav<span>app</span>
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="privacy.html">
+                        Privacy Policy
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     PAGE HEADER
+========================== -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <h1>
+            Contact Us
+        </h1>
+
+        <p>
+            We're here to help with your questions and support needs.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================== -->
+
+<main>
+
+    <section class="contact-section">
+
+        <div class="container">
+
+            <div class="contact-wrapper">
+
+
+                <!-- CONTACT INFORMATION -->
+
+                <div class="contact-info">
+
+                    <h2>
+                        Get in Touch
+                    </h2>
+
+                    <p>
+                        Have a question about one of our apps?
+                        Need help or want to send us feedback?
+                        Feel free to contact us.
+                    </p>
+
+
+                    <div class="info-item">
+
+                        <h3>
+                            Email Support
+                        </h3>
+
+                        <p>
+                            <a href="mailto:YOUR_EMAIL@example.com">
+                                YOUR_EMAIL@example.com
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <h3>
+                            Developer
+                        </h3>
+
+                        <p>
+                            Flavapp
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <h3>
+                            Google Play
+                        </h3>
+
+                        <p>
+                            <a
+                                href="https://play.google.com/store/apps/dev?id=8125367806341362231"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                View our apps on Google Play
+
+                            </a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
+
+                <div class="contact-form">
+
+                    <h2>
+                        Send a Message
+                    </h2>
+
+                    <p>
+                        Fill in the form below and your email application
+                        will open with your message.
+                    </p>
+
+
+                    <form
+                        action="mailto:YOUR_EMAIL@example.com"
+                        method="post"
+                        enctype="text/plain">
+
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="Name"
+                                placeholder="Your name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="Email"
+                                placeholder="your@email.com"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="Message"
+                                placeholder="Write your message here..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="submit-button">
+
+                            Send Message
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div class="copyright">
+            © 2026 Flavapp. All rights reserved.
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="privacy.html">
+                Privacy Policy
+            </a>
+
+            <a href="contact.html">
+                Contact Us
+            </a>
+
+            <a
+                href="https://play.google.com/store/apps/dev?id=8125367806341362231"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Google Play
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
+```
