@@ -438,7 +438,25 @@ header.scrolled {
 }
 
 .app-card h3 { font-size: 20px; letter-spacing: -0.02em; margin-bottom: 10px; }
-.app-card p { flex-grow: 1; margin-bottom: 26px; color: var(--muted); font-size: 15px; }
+.app-card p { flex-grow: 1; margin-bottom: 20px; color: var(--muted); font-size: 15px; }
+
+.app-stats { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.stat-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 11px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.04);
+    font-size: 13px;
+    font-weight: 700;
+}
+.stat-pill small { font-size: 12px; font-weight: 500; color: var(--muted); }
+.stat-pill svg { width: 14px; height: 14px; }
+.stat-pill.rating svg { fill: #fbbf24; }
+.stat-pill.installs svg { color: var(--a2); }
+.stat-pill.new { color: #34d399; border-color: rgba(52, 211, 153, 0.35); background: rgba(52, 211, 153, 0.08); }
 
 .play-button {
     display: flex;
