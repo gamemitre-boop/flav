@@ -1,776 +1,387 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Flavapp Privacy Policy. Learn how Flavapp collects, uses and protects information.">
-
-    <meta name="theme-color" content="#111827">
+    <meta name="description" content="Flavapp Privacy Policy. Learn how Flavapp collects, uses and protects information.">
+    <meta name="theme-color" content="#06080f">
 
     <meta property="og:title" content="Flavapp - Privacy Policy">
-    <meta property="og:description"
-          content="Privacy Policy for Flavapp applications.">
+    <meta property="og:description" content="Privacy Policy for Flavapp applications.">
     <meta property="og:type" content="website">
 
     <title>Flavapp - Privacy Policy</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f8fafc;
-            color: #111827;
-            line-height: 1.7;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .container {
-            width: min(1120px, 92%);
-            margin: auto;
-        }
-
-        /* HEADER */
-
-        header {
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .navbar {
-            min-height: 72px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .logo {
-            font-size: 25px;
-            font-weight: 800;
-            color: #111827;
-        }
-
-        .logo span {
-            color: #2563eb;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 28px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: #374151;
-            font-size: 15px;
-            font-weight: 600;
-            transition: 0.2s ease;
-        }
-
-        .nav-links a:hover {
-            color: #2563eb;
-        }
-
-        /* PAGE HEADER */
-
-        .page-header {
-            background:
-                radial-gradient(circle at top right, #dbeafe 0, transparent 35%),
-                #ffffff;
-
-            padding: 75px 0 60px;
-            text-align: center;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .page-header h1 {
-            font-size: clamp(36px, 6vw, 54px);
-            line-height: 1.1;
-            margin-bottom: 15px;
-            letter-spacing: -1px;
-        }
-
-        .page-header p {
-            color: #6b7280;
-            font-size: 16px;
-        }
-
-        /* PRIVACY CONTENT */
-
-        .privacy-section {
-            padding: 70px 0;
-        }
-
-        .privacy-content {
-            max-width: 850px;
-            margin: auto;
-            background: #ffffff;
-            border: 1px solid #e5e7eb;
-            border-radius: 18px;
-            padding: 45px;
-            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
-        }
-
-        .privacy-content h2 {
-            font-size: 26px;
-            margin-top: 38px;
-            margin-bottom: 14px;
-            color: #111827;
-        }
-
-        .privacy-content h2:first-of-type {
-            margin-top: 0;
-        }
-
-        .privacy-content p {
-            color: #4b5563;
-            font-size: 16px;
-            margin-bottom: 16px;
-        }
-
-        .privacy-content ul {
-            margin: 10px 0 20px 25px;
-            color: #4b5563;
-        }
-
-        .privacy-content li {
-            margin-bottom: 8px;
-        }
-
-        .privacy-content a {
-            color: #2563eb;
-            word-break: break-word;
-        }
-
-        .privacy-content a:hover {
-            text-decoration: underline;
-        }
-
-        .last-updated {
-            display: inline-block;
-            background: #eff6ff;
-            color: #2563eb;
-            border: 1px solid #dbeafe;
-            padding: 7px 13px;
-            border-radius: 999px;
-            font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 25px;
-        }
-
-        /* FOOTER */
-
-        footer {
-            background: #0f172a;
-            color: #ffffff;
-            padding: 35px 0;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            color: #cbd5e1;
-            font-size: 14px;
-        }
-
-        .footer-links a:hover {
-            color: #ffffff;
-        }
-
-        .copyright {
-            color: #94a3b8;
-            font-size: 14px;
-        }
-
-        /* MOBILE */
-
-        @media (max-width: 650px) {
-
-            .navbar {
-                flex-direction: column;
-                padding: 18px 0;
-            }
-
-            .nav-links {
-                gap: 18px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .page-header {
-                padding: 55px 0 45px;
-            }
-
-            .privacy-section {
-                padding: 40px 0;
-            }
-
-            .privacy-content {
-                padding: 25px 20px;
-                border-radius: 14px;
-            }
-
-            .privacy-content h2 {
-                font-size: 22px;
-            }
-
-            .privacy-content p {
-                font-size: 15px;
-            }
-
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .footer-links {
-                justify-content: center;
-            }
-        }
-
-    </style>
+    <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
 </head>
-
 
 <body>
 
-<!-- =========================
-     HEADER
-========================== -->
+<div class="progress"></div>
+<div class="bg" aria-hidden="true">
+    <span class="orb o1"></span>
+    <span class="orb o2"></span>
+    <span class="orb o3"></span>
+</div>
 
+<!-- HEADER -->
 <header>
-
     <div class="container navbar">
 
-        <a href="index.html" class="logo">
-            Flav<span>app</span>
+        <a href="index.html" class="logo" aria-label="Flavapp home">
+            <i class="logo-mark">F</i>
+            <span>Flav<em>app</em></span>
         </a>
 
-        <nav>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+            <span></span><span></span>
+        </button>
 
+        <nav id="nav">
             <ul class="nav-links">
-
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="privacy.html">
-                        Privacy Policy
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html">
-                        Contact Us
-                    </a>
-                </li>
-
+                <li><a href="index.html">Home</a></li>
+                <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-
         </nav>
 
     </div>
-
 </header>
 
 
-<!-- =========================
-     PAGE HEADER
-========================== -->
-
+<!-- PAGE HEADER -->
 <section class="page-header">
-
     <div class="container">
-
-        <h1>
-            Privacy Policy
-        </h1>
-
-        <p>
-            How Flavapp collects, uses and protects information.
-        </p>
-
+        <span class="eyebrow reveal">Legal</span>
+        <h1 class="reveal" style="--d:.08s">Privacy <span class="grad-text">Policy</span></h1>
+        <p class="reveal" style="--d:.16s">How Flavapp collects, uses and protects information.</p>
     </div>
-
 </section>
 
 
-<!-- =========================
-     PRIVACY POLICY
-========================== -->
-
 <main>
-
     <section class="privacy-section">
+        <div class="container privacy-layout">
 
-        <div class="container">
+            <!-- TABLE OF CONTENTS -->
+            <aside class="toc">
+                <h4>On this page</h4>
+                <nav>
+                    <a href="#non-personal" class="active">Non-Personal Data</a>
+                    <a href="#personal">Personal Data</a>
+                    <a href="#disclosure">Disclosure &amp; Transfer</a>
+                    <a href="#safeguards">Safeguards</a>
+                    <a href="#other">Other</a>
+                    <a href="#third-party">3rd Party Services</a>
+                    <a href="#advertising">Advertising</a>
+                    <a href="#admob">AdMob</a>
+                    <a href="#analytics">Analytics</a>
+                    <a href="#coppa">COPPA Compliance</a>
+                </nav>
+            </aside>
 
+
+            <!-- POLICY CONTENT -->
             <article class="privacy-content">
 
-                <span class="last-updated">
-                    Flavapp Privacy Policy
-                </span>
-
-
-                <p>
-                    FLAVAPP team has adopted this privacy policy
-                    (“Privacy Policy”) to explain how FLAVAPP collects,
-                    stores, and uses the information collected in
-                    connection with FLAVAPP Services.
-                </p>
-
-                <p>
-                    BY INSTALLING, USING, REGISTERING TO OR OTHERWISE
-                    ACCESSING THE SERVICES, YOU AGREE TO THIS PRIVACY
-                    POLICY AND GIVE AN EXPLICIT AND INFORMED CONSENT
-                    TO THE PROCESSING OF YOUR PERSONAL DATA IN
-                    ACCORDANCE WITH THIS PRIVACY POLICY.
-                </p>
-
-                <p>
-                    IF YOU DO NOT AGREE TO THIS PRIVACY POLICY, PLEASE
-                    DO NOT INSTALL, USE, REGISTER TO OR OTHERWISE
-                    ACCESS THE SERVICES.
-                </p>
-
-                <p>
-                    FLAVAPP reserves the right to modify this Privacy
-                    Policy at reasonable times, so please review it
-                    frequently. If FLAVAPP makes material or significant
-                    changes to this Privacy Policy, FLAVAPP may post a
-                    notice on FLAVAPP’s website along with the updated
-                    Privacy Policy.
-                </p>
-
-
-                <h2>
-                    Non-Personal Data
-                </h2>
-
-                <p>
-                    For purposes of this Privacy Policy, “non-personal
-                    data” means information that does not directly
-                    identify you.
-                </p>
-
-                <p>
-                    The types of non-personal data FLAVAPP may collect
-                    and use include, but are not limited to:
-                    application properties, including application name,
-                    package name and icon installed on your device.
-                </p>
-
-                <p>
-                    Your checking, including likes and recommendations,
-                    of a game may be disclosed to FLAVAPP users.
-                </p>
-
-                <p>
-                    FLAVAPP may use and disclose to FLAVAPP partners
-                    and contractors the collected non-personal data
-                    for purposes of analyzing usage of the Services,
-                    advertisement serving, managing and providing the
-                    Services and further developing FLAVAPP services
-                    and products.
-                </p>
-
-                <p>
-                    You recognize and agree that analytics companies
-                    utilized by FLAVAPP may combine information
-                    collected with other information they have
-                    independently collected from other services or
-                    products relating to your activities.
-                </p>
-
-                <p>
-                    These companies collect and use information under
-                    their own privacy policies.
-                </p>
-
-
-                <h2>
-                    Personal Data
-                </h2>
-
-                <p>
-                    For purposes of this Privacy Policy, “personal data”
-                    means personally identifiable information that
-                    specifically identifies you as an individual.
-                </p>
-
-                <p>
-                    Personal information collected by FLAVAPP is
-                    information voluntarily provided to us by you when
-                    you create your account or change your account
-                    information.
-                </p>
-
-                <p>
-                    The information includes your Facebook ID, name,
-                    gender, location and your friends’ IDs on Facebook.
-                    FLAVAPP also stores your game check-ins, likes,
-                    dislikes, recommendations and messages.
-                </p>
-
-                <p>
-                    FLAVAPP may use collected personal data for purposes
-                    of analyzing usage of the Services, providing
-                    customer and technical support, managing and
-                    providing Services, including managing advertisement
-                    serving, and further developing FLAVAPP services
-                    and products.
-                </p>
-
-                <p>
-                    FLAVAPP may combine non-personal data with personal
-                    data. Certain features of the Services may be able
-                    to connect to your social networking sites to obtain
-                    additional information about you.
-                </p>
-
-                <p>
-                    In such cases, FLAVAPP may be able to collect certain
-                    information from your social networking profile when
-                    your social networking site permits it, and when you
-                    consent to allow your social networking site to make
-                    that information available to FLAVAPP.
-                </p>
-
-                <p>
-                    This information may include, but is not limited to,
-                    your name, profile picture, gender, user ID, email
-                    address, country, language, time zone, organizations
-                    and links on your profile page, names and profile
-                    pictures of your social networking site friends and
-                    other information you have included in your social
-                    networking profile.
-                </p>
-
-
-                <h2>
-                    Disclosure and Transfer of Personal Data
-                </h2>
-
-                <p>
-                    FLAVAPP collects and processes personal data on a
-                    voluntary basis and it is not in the business of
-                    selling your personal data to third parties.
-                </p>
-
-                <p>
-                    Personal data may, however, occasionally be disclosed
-                    in accordance with applicable legislation and this
-                    Privacy Policy.
-                </p>
-
-                <p>
-                    FLAVAPP may hire agents and contractors to collect
-                    and process personal data on FLAVAPP’s behalf. Such
-                    agents and contractors will be instructed to comply
-                    with this Privacy Policy and to use personal data
-                    only for the purposes for which they have been
-                    engaged.
-                </p>
-
-                <p>
-                    FLAVAPP may use third-party service providers such
-                    as credit card processors, email service providers,
-                    shipping agents, data analyzers and business
-                    intelligence providers.
-                </p>
-
-                <p>
-                    FLAVAPP has the right to share personal data as
-                    necessary for the aforementioned third parties to
-                    provide their services for FLAVAPP.
-                </p>
-
-                <p>
-                    FLAVAPP may disclose personal data to law enforcement
-                    or other government officials when required by law
-                    or in connection with investigations of fraud,
-                    intellectual property infringements or other illegal
-                    activity.
-                </p>
-
-
-                <h2>
-                    Safeguards
-                </h2>
-
-                <p>
-                    FLAVAPP follows generally accepted industry standards
-                    and maintains reasonable safeguards to attempt to
-                    ensure the security, integrity and privacy of the
-                    information in FLAVAPP’s possession.
-                </p>
-
-                <p>
-                    Only persons with a need to process personal data
-                    in connection with their tasks and technical
-                    maintenance have access to personal data in
-                    FLAVAPP’s possession.
-                </p>
-
-                <p>
-                    Personal data collected by FLAVAPP is stored in
-                    secure operating environments that are not available
-                    to the public.
-                </p>
-
-                <p>
-                    To prevent unauthorized online access to personal
-                    data, FLAVAPP maintains personal data behind
-                    firewall-protected servers.
-                </p>
-
-                <p>
-                    However, no system can be 100% secure and there is
-                    always a possibility of unauthorized access despite
-                    reasonable security efforts.
-                </p>
-
-
-                <h2>
-                    Other
-                </h2>
-
-                <p>
-                    Please be aware of the open nature of certain social
-                    networking and other open features of the Services
-                    FLAVAPP may make available to you.
-                </p>
-
-                <p>
-                    You may choose to disclose data about yourself in
-                    the course of contributing user-generated content
-                    to the Services.
-                </p>
-
-                <p>
-                    Any data that you disclose in forums, blogs, chats
-                    or similar public areas may be public information
-                    and there may be no expectation of privacy or
-                    confidentiality.
-                </p>
-
-                <p>
-                    FLAVAPP is not responsible for any personal data
-                    you choose to make public in these forums.
-                </p>
-
-                <p>
-                    If you are under 15 years of age or a minor in your
-                    country of residence, please ask your legal guardian’s
-                    permission to use or access the Services.
-                </p>
-
-                <p>
-                    FLAVAPP takes children’s privacy seriously and
-                    encourages parents and guardians to play an active
-                    role in their children's online experience.
-                </p>
-
-                <p>
-                    FLAVAPP does not knowingly collect personal
-                    information from children below the applicable age.
-                    If FLAVAPP learns that it has inadvertently gathered
-                    personal data from children under the applicable
-                    age, FLAVAPP will take reasonable measures to
-                    promptly erase such data.
-                </p>
-
-                <p>
-                    FLAVAPP may store and/or transfer personal data to
-                    affiliates and partners in and outside of EU/EEA
-                    member states and the United States in accordance
-                    with applicable legislation and this Privacy Policy.
-                </p>
-
-                <p>
-                    FLAVAPP may disclose personal data to third parties
-                    in connection with a corporate merger, consolidation,
-                    restructuring, sale of substantially all of FLAVAPP’s
-                    stock or assets or other corporate change.
-                </p>
-
-                <p>
-                    If FLAVAPP receives a formal written complaint from
-                    you, it is FLAVAPP's policy to attempt to contact you
-                    directly to address your concerns.
-                </p>
-
-
-                <h2>
-                    3rd Party Services
-                </h2>
-
-                <p>
-                    We use third-party services in our apps. These
-                    services may collect usage data in compliance with
-                    their own Privacy Policies.
-                </p>
-
-
-                <h2>
-                    Advertising
-                </h2>
-
-                <p>
-                    Third-party ad serving systems allow user data to be
-                    utilized for advertising communication purposes
-                    displayed in the form of banners and other
-                    advertisements on FLAVAPP apps, possibly based on
-                    user interests.
-                </p>
-
-
-                <h2>
-                    AdMob
-                </h2>
-
-                <p>
-                    We use AdMob by Google as the main ad server.
-                </p>
-
-                <p>
-                    For more information, please see the
-                    <a
-                        href="https://policies.google.com/privacy"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        Google Privacy Policy
-                    </a>.
-                </p>
-
-
-                <h2>
-                    Analytics
-                </h2>
-
-                <p>
-                    Third-party analytics services allow us to monitor
-                    and analyze app usage, better understand our audience
-                    and user behavior.
-                </p>
-
-                <p>
-                    Google Analytics is an analysis service provided by
-                    Google. Google utilizes collected data to track and
-                    examine the use of FLAVAPP Apps, prepare reports on
-                    user activities and share them with other Google
-                    services.
-                </p>
-
-                <p>
-                    Google may use the data to contextualize and
-                    personalize advertisements of its own advertising
-                    network.
-                </p>
-
-
-                <h2>
-                    Children’s Online Privacy Protection Act Compliance
-                </h2>
-
-                <p>
-                    We are in compliance with the requirements of COPPA.
-                    We do not knowingly collect personal information from
-                    anyone under 13 years of age.
-                </p>
-
-                <p>
-                    Our products and services are directed to people who
-                    are at least 13 years old or older.
-                </p>
+                <div class="notice reveal">
+                    <p>
+                        FLAVAPP team has adopted this privacy policy (“Privacy Policy”)
+                        to explain how FLAVAPP collects, stores, and uses the information
+                        collected in connection with FLAVAPP Services.
+                    </p>
+                    <p class="caps">
+                        BY INSTALLING, USING, REGISTERING TO OR OTHERWISE ACCESSING THE
+                        SERVICES, YOU AGREE TO THIS PRIVACY POLICY AND GIVE AN EXPLICIT
+                        AND INFORMED CONSENT TO THE PROCESSING OF YOUR PERSONAL DATA IN
+                        ACCORDANCE WITH THIS PRIVACY POLICY.
+                    </p>
+                    <p class="caps">
+                        IF YOU DO NOT AGREE TO THIS PRIVACY POLICY, PLEASE DO NOT INSTALL,
+                        USE, REGISTER TO OR OTHERWISE ACCESS THE SERVICES.
+                    </p>
+                    <p>
+                        FLAVAPP reserves the right to modify this Privacy Policy at
+                        reasonable times, so please review it frequently. If FLAVAPP makes
+                        material or significant changes to this Privacy Policy, FLAVAPP may
+                        post a notice on FLAVAPP’s website along with the updated Privacy
+                        Policy.
+                    </p>
+                </div>
+
+
+                <section class="policy-card reveal" id="non-personal">
+                    <h2><span class="n">01</span>Non-Personal Data</h2>
+                    <p>
+                        For purposes of this Privacy Policy, “non-personal data” means
+                        information that does not directly identify you.
+                    </p>
+                    <p>
+                        The types of non-personal data FLAVAPP may collect and use include,
+                        but are not limited to: application properties, including application
+                        name, package name and icon installed on your device.
+                    </p>
+                    <p>
+                        Your checking, including likes and recommendations, of a game may be
+                        disclosed to FLAVAPP users.
+                    </p>
+                    <p>
+                        FLAVAPP may use and disclose to FLAVAPP partners and contractors the
+                        collected non-personal data for purposes of analyzing usage of the
+                        Services, advertisement serving, managing and providing the Services
+                        and further developing FLAVAPP services and products.
+                    </p>
+                    <p>
+                        You recognize and agree that analytics companies utilized by FLAVAPP
+                        may combine information collected with other information they have
+                        independently collected from other services or products relating to
+                        your activities.
+                    </p>
+                    <p>These companies collect and use information under their own privacy policies.</p>
+                </section>
+
+
+                <section class="policy-card reveal" id="personal">
+                    <h2><span class="n">02</span>Personal Data</h2>
+                    <p>
+                        For purposes of this Privacy Policy, “personal data” means personally
+                        identifiable information that specifically identifies you as an
+                        individual.
+                    </p>
+                    <p>
+                        Personal information collected by FLAVAPP is information voluntarily
+                        provided to us by you when you create your account or change your
+                        account information.
+                    </p>
+                    <p>
+                        The information includes your Facebook ID, name, gender, location and
+                        your friends’ IDs on Facebook. FLAVAPP also stores your game check-ins,
+                        likes, dislikes, recommendations and messages.
+                    </p>
+                    <p>
+                        FLAVAPP may use collected personal data for purposes of analyzing usage
+                        of the Services, providing customer and technical support, managing and
+                        providing Services, including managing advertisement serving, and
+                        further developing FLAVAPP services and products.
+                    </p>
+                    <p>
+                        FLAVAPP may combine non-personal data with personal data. Certain
+                        features of the Services may be able to connect to your social
+                        networking sites to obtain additional information about you.
+                    </p>
+                    <p>
+                        In such cases, FLAVAPP may be able to collect certain information from
+                        your social networking profile when your social networking site permits
+                        it, and when you consent to allow your social networking site to make
+                        that information available to FLAVAPP.
+                    </p>
+                    <p>
+                        This information may include, but is not limited to, your name, profile
+                        picture, gender, user ID, email address, country, language, time zone,
+                        organizations and links on your profile page, names and profile pictures
+                        of your social networking site friends and other information you have
+                        included in your social networking profile.
+                    </p>
+                </section>
+
+
+                <section class="policy-card reveal" id="disclosure">
+                    <h2><span class="n">03</span>Disclosure and Transfer of Personal Data</h2>
+                    <p>
+                        FLAVAPP collects and processes personal data on a voluntary basis and it
+                        is not in the business of selling your personal data to third parties.
+                    </p>
+                    <p>
+                        Personal data may, however, occasionally be disclosed in accordance with
+                        applicable legislation and this Privacy Policy.
+                    </p>
+                    <p>
+                        FLAVAPP may hire agents and contractors to collect and process personal
+                        data on FLAVAPP’s behalf. Such agents and contractors will be instructed
+                        to comply with this Privacy Policy and to use personal data only for the
+                        purposes for which they have been engaged.
+                    </p>
+                    <p>
+                        FLAVAPP may use third-party service providers such as credit card
+                        processors, email service providers, shipping agents, data analyzers and
+                        business intelligence providers.
+                    </p>
+                    <p>
+                        FLAVAPP has the right to share personal data as necessary for the
+                        aforementioned third parties to provide their services for FLAVAPP.
+                    </p>
+                    <p>
+                        FLAVAPP may disclose personal data to law enforcement or other government
+                        officials when required by law or in connection with investigations of
+                        fraud, intellectual property infringements or other illegal activity.
+                    </p>
+                </section>
+
+
+                <section class="policy-card reveal" id="safeguards">
+                    <h2><span class="n">04</span>Safeguards</h2>
+                    <p>
+                        FLAVAPP follows generally accepted industry standards and maintains
+                        reasonable safeguards to attempt to ensure the security, integrity and
+                        privacy of the information in FLAVAPP’s possession.
+                    </p>
+                    <p>
+                        Only persons with a need to process personal data in connection with their
+                        tasks and technical maintenance have access to personal data in FLAVAPP’s
+                        possession.
+                    </p>
+                    <p>
+                        Personal data collected by FLAVAPP is stored in secure operating
+                        environments that are not available to the public.
+                    </p>
+                    <p>
+                        To prevent unauthorized online access to personal data, FLAVAPP maintains
+                        personal data behind firewall-protected servers.
+                    </p>
+                    <p>
+                        However, no system can be 100% secure and there is always a possibility of
+                        unauthorized access despite reasonable security efforts.
+                    </p>
+                </section>
+
+
+                <section class="policy-card reveal" id="other">
+                    <h2><span class="n">05</span>Other</h2>
+                    <p>
+                        Please be aware of the open nature of certain social networking and other
+                        open features of the Services FLAVAPP may make available to you.
+                    </p>
+                    <p>
+                        You may choose to disclose data about yourself in the course of contributing
+                        user-generated content to the Services.
+                    </p>
+                    <p>
+                        Any data that you disclose in forums, blogs, chats or similar public areas
+                        may be public information and there may be no expectation of privacy or
+                        confidentiality.
+                    </p>
+                    <p>
+                        FLAVAPP is not responsible for any personal data you choose to make public
+                        in these forums.
+                    </p>
+                    <p>
+                        If you are under 15 years of age or a minor in your country of residence,
+                        please ask your legal guardian’s permission to use or access the Services.
+                    </p>
+                    <p>
+                        FLAVAPP takes children’s privacy seriously and encourages parents and
+                        guardians to play an active role in their children's online experience.
+                    </p>
+                    <p>
+                        FLAVAPP does not knowingly collect personal information from children below
+                        the applicable age. If FLAVAPP learns that it has inadvertently gathered
+                        personal data from children under the applicable age, FLAVAPP will take
+                        reasonable measures to promptly erase such data.
+                    </p>
+                    <p>
+                        FLAVAPP may store and/or transfer personal data to affiliates and partners
+                        in and outside of EU/EEA member states and the United States in accordance
+                        with applicable legislation and this Privacy Policy.
+                    </p>
+                    <p>
+                        FLAVAPP may disclose personal data to third parties in connection with a
+                        corporate merger, consolidation, restructuring, sale of substantially all of
+                        FLAVAPP’s stock or assets or other corporate change.
+                    </p>
+                    <p>
+                        If FLAVAPP receives a formal written complaint from you, it is FLAVAPP's
+                        policy to attempt to contact you directly to address your concerns.
+                    </p>
+                </section>
+
+
+                <section class="policy-card reveal" id="third-party">
+                    <h2><span class="n">06</span>3rd Party Services</h2>
+                    <p>
+                        We use third-party services in our apps. These services may collect usage
+                        data in compliance with their own Privacy Policies.
+                    </p>
+                </section>
+
+
+                <section class="policy-card reveal" id="advertising">
+                    <h2><span class="n">07</span>Advertising</h2>
+                    <p>
+                        Third-party ad serving systems allow user data to be utilized for
+                        advertising communication purposes displayed in the form of banners and
+                        other advertisements on FLAVAPP apps, possibly based on user interests.
+                    </p>
+                </section>
+
+
+                <section class="policy-card reveal" id="admob">
+                    <h2><span class="n">08</span>AdMob</h2>
+                    <p>We use AdMob by Google as the main ad server.</p>
+                    <p>
+                        For more information, please see the
+                        <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+                    </p>
+                </section>
+
+
+                <section class="policy-card reveal" id="analytics">
+                    <h2><span class="n">09</span>Analytics</h2>
+                    <p>
+                        Third-party analytics services allow us to monitor and analyze app usage,
+                        better understand our audience and user behavior.
+                    </p>
+                    <p>
+                        Google Analytics is an analysis service provided by Google. Google utilizes
+                        collected data to track and examine the use of FLAVAPP Apps, prepare reports
+                        on user activities and share them with other Google services.
+                    </p>
+                    <p>
+                        Google may use the data to contextualize and personalize advertisements of
+                        its own advertising network.
+                    </p>
+                </section>
+
+
+                <section class="policy-card reveal" id="coppa">
+                    <h2><span class="n">10</span>Children’s Online Privacy Protection Act Compliance</h2>
+                    <p>
+                        We are in compliance with the requirements of COPPA. We do not knowingly
+                        collect personal information from anyone under 13 years of age.
+                    </p>
+                    <p>
+                        Our products and services are directed to people who are at least 13 years
+                        old or older.
+                    </p>
+                </section>
 
             </article>
 
         </div>
-
     </section>
-
 </main>
 
 
-<!-- =========================
-     FOOTER
-========================== -->
-
+<!-- FOOTER -->
 <footer>
-
     <div class="container footer-content">
 
-        <div class="copyright">
-            © 2026 Flavapp. All rights reserved.
-        </div>
+        <div class="copyright">© <span class="year">2026</span> Flavapp. All rights reserved.</div>
 
         <div class="footer-links">
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="privacy.html">
-                Privacy Policy
-            </a>
-
-            <a href="contact.html">
-                Contact Us
-            </a>
-
-            <a
-                href="https://play.google.com/store/apps/dev?id=8125367806341362231"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                Google Play
-            </a>
-
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="https://play.google.com/store/apps/dev?id=8125367806341362231" target="_blank" rel="noopener noreferrer">Google Play</a>
         </div>
 
     </div>
-
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-```
