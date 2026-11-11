@@ -3,176 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="Contact Flavapp support for questions, feedback and assistance with our Android applications.">
-    <meta name="theme-color" content="#06080f">
-
+    <meta name="theme-color" content="#eef1f6">
     <meta property="og:title" content="Flavapp - Contact Us">
-    <meta property="og:description" content="Contact Flavapp for support and questions about our applications.">
+    <meta property="og:description" content="Contact Flavapp support for questions, feedback and assistance with our Android applications.">
     <meta property="og:type" content="website">
-
     <title>Flavapp - Contact Us</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="favicon.ico" sizes="48x48">
     <link rel="icon" href="favicon-192.png" type="image/png" sizes="192x192">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="style.css">
-    <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+    <noscript><style>.reveal{opacity:1;transform:none;filter:none}.split .ln>span{transform:none}</style></noscript>
 </head>
-
 <body>
-
 <div class="progress"></div>
-<div class="bg" aria-hidden="true">
-    <span class="orb o1"></span>
-    <span class="orb o2"></span>
-    <span class="orb o3"></span>
-</div>
+<div class="frame">
 
-<!-- HEADER -->
 <header>
     <div class="container navbar">
-
         <a href="index.html" class="logo" aria-label="Flavapp home">
             <i class="logo-mark">F</i>
             <span>Flav<em>app</em></span>
         </a>
-
-        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
-            <span></span><span></span>
-        </button>
-
         <nav id="nav">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#apps">Apps</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
                 <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
-
+        <div class="nav-cta">
+            <a href="https://play.google.com/store/apps/dev?id=8125367806341362231" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-sm">Google Play</a>
+            <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+        </div>
     </div>
 </header>
 
-
-<!-- PAGE HEADER -->
 <section class="page-header">
+    <svg class="doodle thin " style="right:6%;top:20px;width:120px;color:#9fb6e6" viewBox="0 0 200 300"><path d="M150 10c40 60-60 80-40 140s80 20 40 80-120 30-140 60"/></svg>
     <div class="container">
         <span class="eyebrow reveal">Support</span>
-        <h1 class="reveal" style="--d:.08s">Contact <span class="grad-text">Us</span></h1>
-        <p class="reveal" style="--d:.16s">We're here to help with your questions and support needs.</p>
+        <h1 class="split">Contact <span class="scribble">Us<svg viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M3 14C50 6 120 4 197 9"/></svg></span></h1>
+        <p class="reveal" style="--d:.3s">We're here to help with your questions and support needs.</p>
     </div>
 </section>
-
 
 <main>
     <section class="contact-section">
         <div class="container">
             <div class="contact-wrapper">
-
-                <!-- CONTACT INFORMATION -->
                 <div class="contact-info reveal">
-
                     <h2>Get in Touch</h2>
-                    <p>
-                        Have a question about one of our apps? Need help or want to
-                        send us feedback? Feel free to contact us.
-                    </p>
-
-                    <div class="info-item">
-                        <span class="ic">
-                            <svg class="ico" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-                        </span>
-                        <div>
-                            <h3>Email Support</h3>
-                            <p><a href="mailto:YOUR_EMAIL@example.com">info@flavapp.online</a></p>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <span class="ic">
-                            <svg class="ico" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg>
-                        </span>
-                        <div>
-                            <h3>Developer</h3>
-                            <p>Flavapp</p>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <span class="ic">
-                            <svg class="ico" viewBox="0 0 24 24"><path d="M5 3l14 9-14 9z"/></svg>
-                        </span>
-                        <div>
-                            <h3>Google Play</h3>
-                            <p>
-                                <a href="https://play.google.com/store/apps/dev?id=8125367806341362231" target="_blank" rel="noopener noreferrer">View our apps on Google Play</a>
-                            </p>
-                        </div>
-                    </div>
-
+                    <p>Have a question about one of our apps? Need help or want to send us feedback? Feel free to contact us.</p>
+                    <div class="info-item"><span class="ic"><svg class="ico" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><div><h3>Email Support</h3><p><a href="mailto:info@flavapp.online">info@flavapp.online</a></p></div></div>
+                    <div class="info-item"><span class="ic"><svg class="ico" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg></span><div><h3>Developer</h3><p>Flavapp</p></div></div>
+                    <div class="info-item"><span class="ic"><svg class="ico" viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span><div><h3>Google Play</h3><p><a href="https://play.google.com/store/apps/dev?id=8125367806341362231" target="_blank" rel="noopener noreferrer">View our apps on Google Play</a></p></div></div>
+                    <div class="info-item"><span class="ic"><svg class="ico" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><div><h3>Legal</h3><p><a href="terms.html">Terms of Use</a> · <a href="privacy.html">Privacy Policy</a></p></div></div>
                 </div>
 
-
-                <!-- CONTACT FORM -->
                 <div class="contact-form reveal" style="--d:.12s">
-
                     <h2>Send a Message</h2>
                     <p>Fill in the form below and your email application will open with your message.</p>
-
-                    <form id="contact-form" data-email="YOUR_EMAIL@example.com">
-
-                        <div class="form-group">
-                            <input type="text" id="name" name="Name" placeholder=" " autocomplete="name" required>
-                            <label for="name">Name</label>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" id="email" name="Email" placeholder=" " autocomplete="email" required>
-                            <label for="email">Email</label>
-                        </div>
-
-                        <div class="form-group">
-                            <textarea id="message" name="Message" placeholder=" " required></textarea>
-                            <label for="message">Message</label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">
-                            Send Message
-                            <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </button>
-
+                    <form id="contact-form" data-email="info@flavapp.online">
+                        <div class="form-group"><input type="text" id="name" name="Name" placeholder=" " autocomplete="name" required><label for="name">Name</label></div>
+                        <div class="form-group"><input type="email" id="email" name="Email" placeholder=" " autocomplete="email" required><label for="email">Email</label></div>
+                        <div class="form-group"><select id="app" name="App"><option value="General">General question</option><option value="File Recovery">File Recovery</option><option value="Wireless Display">Wireless Display</option><option value="GBA Emulator: Retro Games">GBA Emulator: Retro Games</option><option value="SmartTag &amp; AirTag Finder">SmartTag &amp; AirTag Finder</option><option value="Dual Camera Video Recorder">Dual Camera Video Recorder</option><option value="TV USB Connector">TV USB Connector</option><option value="Gamepad TV: Play Games Remote">Gamepad TV: Play Games Remote</option><option value="Car Link - Auto Screen Mirror">Car Link - Auto Screen Mirror</option></select><label for="app">App</label></div>
+                        <div class="form-group"><textarea id="message" name="Message" placeholder=" " required></textarea><label for="message">Message</label></div>
+                        <button type="submit" class="btn btn-dark">Send Message <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
                         <p class="form-status" role="status"></p>
-
                     </form>
-
                 </div>
-
             </div>
         </div>
     </section>
 </main>
 
-
-<!-- FOOTER -->
 <footer>
-    <div class="container footer-content">
-
-        <div class="copyright">© <span class="year">2026</span> Flavapp. All rights reserved.</div>
-
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="https://play.google.com/store/apps/dev?id=8125367806341362231" target="_blank" rel="noopener noreferrer">Google Play</a>
+    <div class="container">
+        <div class="footer-top">
+            <div>
+                <a href="index.html" class="logo"><i class="logo-mark">F</i><span>Flav<em>app</em></span></a>
+                <p>Android apps for entertainment, TV and car connectivity, gaming and everyday utilities.</p>
+            </div>
+            <div>
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#apps">Our Apps</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="https://play.google.com/store/apps/dev?id=8125367806341362231" target="_blank" rel="noopener noreferrer">Google Play</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="mailto:info@flavapp.online">info@flavapp.online</a></li>
+                </ul>
+            </div>
         </div>
-
+        <div class="footer-bottom">
+            <span>© <span class="year">2026</span> Flavapp. All rights reserved.</span>
+            <span>Made for Android</span>
+        </div>
     </div>
 </footer>
-
+</div>
 <script src="script.js"></script>
 </body>
 </html>
