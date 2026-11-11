@@ -48,7 +48,7 @@ button { font: inherit; }
     background: var(--paper);
     border-radius: 34px;
     box-shadow: var(--shadow);
-    overflow: hidden;
+    overflow: clip;
     position: relative;
 }
 

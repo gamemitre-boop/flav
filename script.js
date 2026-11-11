@@ -136,7 +136,10 @@
                     const link = map.get(e.target.id);
                     if (link) {
                         link.classList.add('active');
-                        link.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+                        const tn = link.parentElement;
+                        if (tn && tn.scrollWidth > tn.clientWidth) {
+                            tn.scrollTo({ left: link.offsetLeft - (tn.clientWidth - link.offsetWidth) / 2, behavior: 'smooth' });
+                        }
                     }
                 });
             },
